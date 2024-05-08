@@ -83,6 +83,20 @@
       "url": "https://www.youtube.com/embed/IGFSiBJIXFQ",
       "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
       "id": 12
+    },
+    {
+      "titulo": "Ruído branco para estudar",
+      "descricao": "7 mil visualizações",
+      "url": "https://www.youtube.com/embed/vweEQFJA3w8",
+      "imagem": "https://purr.objects-us-east-1.dream.io/i/OoNx6.jpg",
+      "id": 13
+    },
+    {
+      "id": "192e",
+      "titulo": "JS",
+      "descricao": "6 mil visualizações",
+      "url": "https://youtube.com/embed/BXqUH86F-kA?list=PLntvgXM11X6pi7mW0O4ZmfUI1xDSIbmTm",
+      "imagem": "https://bairesdev.mo.cloudinary.net/blog/2023/08/What-Is-JavaScript-Used-For.jpg?tx=w_1024,q_auto"
     }
   ]
 }
