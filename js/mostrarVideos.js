@@ -13,15 +13,15 @@ export default function constroiCard(titulo, descricao, url, imagem) {
                 <img src="${imagem}" alt="logo canal alura">
                 <h3>${titulo}</h3>
                 <p>${descricao}</p>
-            </div>
-    `
+            </div>`
     return video;
 }
 
 async function listaVideos() {
     const listaApi = await conectaApi.listaVideos();
     // conectar as duas funções: para cada item da lista de API serão anexados elementos filhos à lista (uma li é criada)
-    listaApi.forEach(elemento => lista.appendChild(constroiCard(elemento.titulo, elemento.descricao, elemento.url, elemento.imagem))) 
+    listaApi.forEach(elemento => lista.appendChild(
+        constroiCard(elemento.titulo, elemento.descricao, elemento.url, elemento.imagem))) 
 }
 
 listaVideos();
