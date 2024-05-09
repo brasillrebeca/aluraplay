@@ -23,9 +23,12 @@ async function criaVideo(titulo, descricao, url, imagem) {
             imagem: imagem,
         })
     });
-
+    if (!conexao.ok) {
+        throw new Error("Não foi possível enviar o vídeo");
+    }
     //para retornar o valor para o usuário, criar outra const que receba o valor e depois o imprima na tela
-    const conexaoConvertida = conexao.json();
+    const conexaoConvertida = await conexao.json();
+
     return conexaoConvertida;
 }
 

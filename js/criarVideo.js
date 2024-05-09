@@ -10,12 +10,15 @@ async function criarVideo(evento) {
     const url = document.querySelector("[data-url]").value;
     const titulo = document.querySelector("[data-titulo]").value;
     const descricao = Math.floor(Math.random() * 10).toString(); // não inserimos um contador para exibir o número de visualizações na tela, por isso esse número será definido a partir dessa variável
+    try {
+        // importar função conectaAPI
+        await conectaApi.criaVideo(titulo, descricao, url, imagem);
 
-    // importar função conectaAPI
-    await conectaApi.criaVideo(titulo, descricao, url, imagem);
-
-    //redirecionar a página quando o envio foi feito com sucesso
-    window.location.href = "../pages/envio-concluido.html";
+        //redirecionar a página quando o envio foi feito com sucesso
+        window.location.href = "../pages/envio-concluido.html";
+    } catch (e) {
+        alert(e);
+    }
 }
 
 // para captar os valores somente depois de tudo preenchido 
